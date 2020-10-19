@@ -150,7 +150,11 @@ let config = {
     type: Phaser.AUTO, // Phaser will use WebGL if available, if not it uses the canvas
     width: 640,
     height: 360,
-    scene: gameScene
+    scene: gameScene,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    }
 };
 
 // create a new game, pass the configuration
